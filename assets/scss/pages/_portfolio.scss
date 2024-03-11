@@ -1,0 +1,80 @@
+$p:".product";
+#{$p} {
+    display: block;
+    margin-bottom: 30px;
+    &:hover{
+        text-decoration: none;
+    }
+    &-image{
+        width: 100%;
+        height: 264px;
+        overflow: hidden;
+        background-size: cover!important;
+        position: relative;
+        margin-bottom: 15px;
+    }
+    &-title{
+        font-family: $title;
+        font-size: 18px;
+        padding: 8px;
+        color: #333;
+    }
+    &-class{
+        font-size: 14px;
+        color: $c-primaryLight;
+        display: block;
+        padding:0 8px;
+
+    }
+    &-item{
+        &-01{
+            background: url(../images/portfolio/item-1.jpg);
+        }
+        &-02{
+            background: url(../images/portfolio/item-2.jpg);
+        }
+        &-03{
+            background: url(../images/portfolio/item-3.jpg);
+        }
+        &-04{
+            background: url(../images/portfolio/item-4.jpg);
+        }
+        &-05{
+            background: url(../images/portfolio/item-5.jpg);
+        }
+        &-06{
+            background: url(../images/portfolio/item-6.jpg);
+        }
+        &-07{
+            background: url(../images/portfolio/item-7.jpg);
+        }
+        &-08{
+            background: url(../images/portfolio/item-8.jpg);
+        }
+        &-09{
+            background: url(../images/portfolio/item-9.jpg);
+        }
+    }
+    &-overlay{
+        width: 100%;
+        min-height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: transparent;
+        display: none;
+        &::before{
+            background-color: rgba(255, 255, 255, 0.76);
+        }
+    }
+    &-icon{
+        background: $c-primary;
+        color: #fff;
+        padding: 15px;
+    }
+}
+.icon-b4-text{
+    .section-subtitle{
+        padding: 0;
+    }
+}

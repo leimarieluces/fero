@@ -1,0 +1,170 @@
+$s:".slider";
+#{$s} {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    &-full{
+        height: 100vh!important;
+        @media screen and (max-width:$mobile-width){
+            height:926px;
+        }
+    }
+    &-item{
+        height: 650px;
+        display: flex;
+        align-items: center;
+        padding: 60px;
+        @media screen and (max-width:$laptop-width){
+            padding: 40px;
+        }
+        @media screen and (max-width:$tablet-width){
+            padding: 30px;
+            height: auto;
+        }
+        &--01{
+            background-size: cover;
+            background-image: url(../images/home/slider-01.jpg);
+        }
+        &--02{
+            background-size: cover;
+            background-image: url(../images/home/slider-02.jpg);
+        }
+        &--03{
+            background-size: cover;
+            background-image: url(../images/home/slider-03.jpg);
+        }
+        &--04{
+            background-size: cover;
+            background-image: url(../images/home/slider-02-01.jpg);
+        }
+    }
+    &-caption{
+        width: 75%;
+        padding: 30px;
+        @media screen and (max-width:$tablet-width){
+            width: 100%;
+            padding: 15px;
+        }
+        .button-group-inline, button{
+            margin-top: 30px;
+            @media screen and (max-width:$tablet-width){
+                margin-top: 0;
+            }
+        }
+    }
+    &-title{
+        font-size: 90px;
+        line-height: 90px;
+        margin-bottom: 15px;
+        font-weight: 800;
+        color:$c-white;
+        font-family: $title;
+        @media screen and (max-width:$laptop-width){
+            font-size: 70px;
+            line-height: 76px;
+            text-align: center;
+        }
+        @media screen and (max-width:$tablet-width){
+            font-size: 46px;
+            line-height: 50px;
+            margin-bottom: 15px;
+        }
+        @media screen and (max-width:$mobile-width){
+            font-size: 32px;
+            line-height: 36px;
+        }
+    }
+    &-content{
+        font-size: 24px;
+        line-height: 28px;
+        color: $c-white;
+        padding: 15px 0;
+        font-weight: 300;
+        font-family: $text;
+        @media screen and (max-width:$tablet-width){
+            font-size: 18px;
+            line-height: 23px;
+            text-align: center;
+        }
+        @media screen and (max-width:$mobile-width){
+            font-size: 16px;
+            line-height: 20px;
+        }
+    }
+    
+}
+$o:".owl";
+#{$o} {
+    &-navStyle{
+        &--01{
+            #{$o}{
+                &-nav{
+                    position: absolute;
+                    width: 100%;
+                    top: 0;
+                    #{$o} {
+                        &-prev{
+                            float: left;
+                        }
+                        &-next{
+                            float: right;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    &-slider{
+        #{$o}{
+            &-dots{
+                position: absolute;
+                bottom: 80px;
+                width: 100%;
+            }
+            &-nav{
+                position: absolute;
+                top: 40%;
+                width: 100%;
+                #{$o} {
+                    &-prev{
+                        float: left;
+                    }
+                    &-next{
+                        float: right;
+                    }
+                }
+                button{
+                    width: 64px;
+                    height: 64px;
+                    background: $c-secondaryLight!important;
+                    margin: 30px!important;
+                    font-size: 16px!important;
+                    color:$c-white;
+                    @media screen and (max-width:$laptop-width){
+                        width: 50px;
+                        height: 50px;
+                        margin: 20px!important;
+                    }
+                    @media screen and (max-width:$tablet-width){
+                        width: 36px;
+                        height: 36px;
+                        margin: 15px!important;
+                    }
+                }
+            }
+        }
+    }
+    &-vertical-dot{
+        #{$o}{
+            &-dots{
+                height: 100%;
+                bottom: 0;
+                left: 20px;
+                width: auto;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+            }
+        }
+    }
+}

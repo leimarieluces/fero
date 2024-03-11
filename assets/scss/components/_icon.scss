@@ -1,0 +1,321 @@
+$i:".icon";
+$sizes: 16px, 26px, 32px, 64px, 72px, 128px, 256px;
+%round{
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#{$i} {
+    background-size: contain!important;
+    display: inline-block;
+    background-repeat: no-repeat!important;
+    background-position: center!important;
+    @each $size in $sizes{
+        &-#{$size}{
+            height: $size;
+            width: $size;
+            font-size: $size;
+        }
+    }
+    &--blog-app{
+        background:url('../icons/icon-blog-app.svg');
+    }
+    &--corporate-app{
+        background:url('../icons/icon-corporate-app.svg');
+    }
+    &--cost-effective{
+        background:url('../icons/icon-cost-effective.svg');
+    }
+    &--custom-app{
+        background:url('../icons/icon-custom-app.svg');
+    }
+    &--diy{
+        background:url('../icons/icon-diy.svg');
+    }
+    &--e-commerce{
+        background:url('../icons/icon-e-commerce.svg');
+    }
+    &--fast-dev{
+        background:url('../icons/icon-fast-dev.svg');
+    }
+    &--fast-development{
+        background:url('../icons/icon-fast-development.svg');
+    }
+    &--fast-support{
+        background:url('../icons/icon-fast-support.svg');
+    }
+    &--forum-app{
+        background:url('../icons/icon-forum-app.svg');
+    }
+    &--modern-design{
+        background:url('../icons/icon-modern-design.svg');
+    }
+    &--multilingual-app{
+        background:url('../icons/icon-multi-lang-app.svg');
+    }
+    &--portfolio-app{
+        background:url('../icons/icon-portfolio-app.svg');
+    }
+    &--reliable{
+        background:url('../icons/icon-reliable.svg');
+    }
+    &--safe-and-secure{
+        background:url('../icons/icon-safe-and-secure.svg');
+    }
+    &--search-engine{
+        background:url('../icons/icon-search-engine.svg');
+    }
+    &--seo{
+        background:url('../icons/icon-seo.svg');
+    }
+    &--themes{
+        background:url('../icons/icon-themes.svg');
+    }
+    &--wordpress-app{
+        background:url('../icons/icon-wordpress-app.png');
+    }
+    &-flag{
+        &--bangladesh{
+            background:url('../flags/round/bangladesh-flag-round-icon-256.png');
+        }
+        &--bulgaria{
+            background:url('../flags/round/bulgaria-flag-round-icon-256.png');
+        }
+        &--china{
+            background:url('../flags/round/china-flag-round-icon-256.png');
+        }
+        &--czech-republic{
+            background:url('../flags/round/czech-republic-flag-round-icon-256.png');
+        }
+        &--france{
+            background:url('../flags/round/france-flag-round-icon-256.png');
+        }
+        &--germany{
+            background:url('../flags/round/germany-flag-round-icon-256.png');
+        }
+        &--indonesia{
+            background:url('../flags/round/indonesia-flag-round-icon-256.png');
+        }
+        &--japan{
+            background:url('../flags/round/japan-flag-round-icon-256.png');
+        }
+        &--malaysia{
+            background:url('../flags/round/malaysia-flag-round-icon-256.png');
+        }
+        &--pakistan{
+            background:url('../flags/round/pakistan-flag-round-icon-256.png');
+        }
+        &--poland{
+            background:url('../flags/round/poland-flag-round-icon-256.png');
+        }
+        &--portugal{
+            background:url('../flags/round/portugal-flag-round-icon-256.png');
+        }
+        &--russia{
+            background:url('../flags/round/russia-flag-round-icon-256.png');
+        }
+        &--saudi-arabia{
+            background:url('../flags/round/saudi-arabia-flag-round-icon-256.png');
+        }
+        &--spain{
+            background:url('../flags/round/spain-flag-round-icon-256.png');
+        }
+        &--united-kingdom{
+            background:url('../flags/round/united-kingdom-flag-round-icon-256.png');
+        }
+    }
+    &-round{
+        @extend %round;
+        &-bordered{
+            @extend %round;
+            border: 2px solid $c-secondaryLight;
+        }
+    }
+    &-rjcc{
+        &--airplane{
+            background-image:url('../icons/icon-airplane.svg');
+        }
+        &--app{
+            background-image:url('../icons/icon-app.svg');
+        }
+        &--approvals-orders{
+            background-image:url('../icons/icon-approvals-orders.svg');
+        }
+        &--architects{
+            background-image:url('../icons/icon-architects.svg');
+        }
+        &--basket{
+            background-image:url('../icons/icon-basket.svg');
+        }
+        &--bookmark{
+            background-image:url('../icons/icon-bookmark.svg');
+        }
+        &--bricks{
+            background-image:url('../icons/icon-bricks.svg');
+        }
+        &--bulb{
+            background-image:url('../icons/icon-bulb.svg');
+        }
+        &--campaigns{
+            background-image:url('../icons/icon-campaigns.svg');
+        }
+        &--caret-right{
+            background-image:url('../icons/icon-caret-right.svg');
+        }
+        &--cart{
+            background-image:url('../icons/icon-cart.svg');
+        }
+        &--code{
+            background-image:url('../icons/icon-code.svg');
+        }
+        &--communication{
+            background-image:url('../icons/icon-communication.svg');
+        }
+        &--contact-management{
+            background-image:url('../icons/icon-contact-management.svg');
+        }
+        &--crm-settings{
+            background-image:url('../icons/icon-crm-settings.svg');
+        }
+        &--data-cost{
+            background-image:url('../icons/icon-data-cost.svg');
+        }
+        &--data-modeling{
+            background-image:url('../icons/icon-data-modeling.svg');
+        }
+        &--default{
+            background-image:url('../icons/icon-caret-right.svg');
+        }
+        &--desktop{
+            background-image:url('../icons/icon-desktop.svg');
+        }
+        &--diamond{
+            background-image:url('../icons/icon-diamond.svg');
+        }
+        &--drawer{
+            background-image:url('../icons/icon-drawer.svg');
+        }
+        &--education{
+            background-image:url('../icons/icon-education.svg');
+        }
+        &--endless-possibilities{
+            background-image:url('../icons/icon-endless-possibilities.svg');
+        }
+        &--event-booking{
+            background-image:url('../icons/icon-event-booking.svg');
+        }
+        &--flag{
+            background-image:url('../icons/icon-flag.svg');
+        }
+        &--form{
+            background-image:url('../icons/icon-form.svg');
+        }
+        &--help{
+            background-image:url('../icons/icon-help.svg');
+        }
+        &--home{
+            background-image:url('../icons/icon-home.svg');
+        }
+        &--phone{
+            background-image:url('../icons/icon-phone.svg');
+        }
+        &--lead-management{
+            background-image:url('../icons/icon-lead-management.svg');
+        }
+        &--magazine{
+            background-image:url('../icons/icon-magazine.svg');
+        }
+        &--milestones-invoicing{
+            background-image:url('../icons/icon-milestones-invoicing.svg');
+        }
+        &--monitoring-system{
+            background-image:url('../icons/icon-monitoring-system.svg');
+        }
+        &--paint{
+            background-image:url('../icons/icon-paint.svg');
+        }
+        &--products-inventory{
+            background-image:url('../icons/icon-products-inventory.svg');
+        }
+        &--real-estate{
+            background-image:url('../icons/icon-real-estate.svg');
+        }
+        &--resorts{
+            background-image:url('../icons/icon-resorts.svg');
+        }
+        &--rocket{
+            background-image:url('../icons/icon-rocket.svg');
+        }
+        &--search{
+            background-image:url('../icons/icon-search.svg');
+        }
+        &--service-contracts{
+            background-image:url('../icons/icon-service-contracts.svg');
+        }
+        &--skill-dev{
+            background-image:url('../icons/icon-skill-dev.svg');
+        }
+        &--smart-quotations{
+            background-image:url('../icons/icon-smart-quotations.svg');
+        }
+        &--shield{
+            background-image:url('../icons/icon-shield.svg');
+        }
+        &--stock-market{
+            background-image:url('../icons/icon-stock-market.svg');
+        }
+        &--suitcase{
+            background-image:url('../icons/icon-suitcase.svg');
+        }
+        &--tours{
+            background-image:url('../icons/icon-tours.svg');
+        }
+        &--online-booking{
+            background-image:url('../icons/icon-online-booking-management.svg');
+        }
+        &--opportunity{
+            background-image:url('../icons/icon-opportunity.svg');
+        }
+        &--organisation{
+            background-image:url('../icons/icon-organisation.svg');
+        }
+        &--plane{
+            background-image:url('../icons/icon-plane.svg');
+        }
+        &--phone{
+            background-image:url('../icons/icon-phone.svg');
+        }
+        &--project-management{
+            background-image:url('../icons/icon-project-management.svg');
+        }
+        &--roles-employees{
+            background-image:url('../icons/icon-roles-employees.svg');
+        }
+        &--web{
+            background-image:url('../icons/icon-web.svg');
+        }
+    }
+    &-rd-holder{
+        height: 90px;
+        width: 90px;
+        background-color:$c-secondaryLight;
+        @media screen and (max-width:$mobile-width) {
+            height: 48px;
+            width: 48px;
+        }
+    }
+    &-animate{
+        background-color: $c-primary;
+        width: 52px;
+        height: 52px;
+        position: absolute;
+        right: 0;
+    }
+    &--primary{
+        color:$c-primary;
+    }
+    &-b4-text{
+        display: flex;
+    }
+}

@@ -1,0 +1,57 @@
+$l : ".list";
+%listprop{
+    display: flex;
+    list-style: none;
+    padding: 8px;
+}
+#{$l}{
+    &-group{
+        @extend %listprop;
+        flex-direction: column;
+        li{
+            &.h-divider{
+                width: 100%;
+                border-top: 1px solid $c-black;
+                opacity: 0.2;
+                margin: 8px 0;
+            }
+        }
+        &-inline{
+            @extend %listprop;
+            display: flex;
+            align-items: center;
+            li{
+                padding: 4px;
+                &:not(:last-child){
+                    margin-right: 8px;
+                }
+                &.divider{
+                    border-right: 1px solid $c-black;
+                    height: 16px;
+                }
+            }
+        }
+    }
+    &-title{
+        font-weight: 700;
+        color: $c-primaryDark;
+        font-family: $title;
+        margin-bottom: 15px;
+        display: flex;
+        align-items: center;
+    }
+    &-link{
+        color: $c-secondaryLight;
+        &:hover{
+            color: $c-secondaryDark;
+        }
+    }
+    &-image{
+        width: 156px;
+    }
+}
+.bullet{
+    font-size: 10px;
+    margin-right: 8px;
+    color: $c-primary;
+}

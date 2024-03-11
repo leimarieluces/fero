@@ -1,0 +1,50 @@
+// colors
+$c-primary:#004AAF;
+$c-primaryLight: #1978FC;
+$c-primarySuperLight:#dee8f5;
+$c-primaryDark:#002963;
+$c-secondaryLight:#B07400;
+$c-secondaryDark:#634200;
+
+// other colors
+$c-default:#dedede;
+$c-primary-focus:$c-primaryDark;
+$c-secondary:$c-secondaryLight;
+$c-secondary--focus:$c-secondaryDark;
+$c-success:#8EB012;
+$c-success--focus:#4F6305;
+$c-warning:#e69603;
+$c-warning--focus:#cc890c;
+$c-danger:#FC3019;
+$c-danger--focus:#B02312;
+
+// text color
+$c-black: #666666;
+$c-white:#fefefe;
+$text-primary:$c-primaryLight;
+$text-success:$c-success;
+$text-danger:$c-danger;
+$text-warning:$c-warning;
+
+// buttons
+$btn-default:#666666;
+$btn-default--hover:$c-black;
+$btn-primary:$c-primaryLight;
+$btn-primary--hover:$c-primaryDark;
+$btn-secondary:$c-secondary;
+$btn-success:$c-success;
+$btn-success--hover:$c-success--focus;
+$btn-warning:$c-warning;
+$btn-warning--hover:$c-warning--focus;
+$btn-danger:$c-danger;
+$btn-danger--hover:$c-danger--focus;
+
+//media-breakpoints
+$desktop-width:1199px;
+$laptop-width:991px;
+$tablet-width:767px;
+$mobile-width:640px;
+
+// fonts
+$title:'Raleway', sans-serif;
+$text:'Open Sans', sans-serif;

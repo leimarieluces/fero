@@ -1,0 +1,95 @@
+.table{
+    &-custom{
+        margin-top:0!important;
+        margin-bottom:0!important;
+        tr{
+            td{
+                &:nth-child(6){
+                    min-width: 320px;
+                }
+            }
+        }
+        thead{
+            tr{
+                th{
+                    font-size: 14px;
+                    font-weight: 600;
+                    text-align: center;
+                    border-bottom: 0;
+                }
+            }
+        }
+        tbody{
+            tr{
+                td{
+                    padding:4px;
+                    vertical-align: middle;
+                }
+                &:nth-of-type(odd){
+                    background:#1978FC;
+                    td{
+                        color: $c-white;
+                    }
+                }
+                &:nth-of-type(even){
+                    background:$c-white;
+                }
+            }
+        }
+    }
+    &-custom-02{
+        width: 100%!important;
+        thead{
+            tr{
+                th{
+                    padding: 15px 8px;
+                    color:$c-primary;
+                    border-bottom-color:$c-primary;
+                    text-align: center;
+                    border-top: 1px solid $c-primaryLight;
+                }
+            }
+        }
+        tbody{
+            tr{
+                &:nth-child(odd){
+                    background-color: $c-white!important;
+                }
+                td{
+                    vertical-align: middle;
+                    border-top: 1px solid $c-primaryLight;
+                    &.dt-txt-center{
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    }
+}
+%form{
+    height: 45px;
+    background-color: #fff;
+    border: 1px solid #5c7080;
+}
+.dataTables_wrapper{
+    .dataTables_filter{
+        input{
+            @extend %form;
+        }
+    }
+    .dataTables_length{
+        select{
+            @extend %form;
+
+        }
+    }
+}
+.page-item .page-link {
+    border-color: $c-primaryDark!important;
+    height: 45px!important;
+    padding: 12px!important;
+}
+.page-item.active .page-link {
+    background-color: $c-primary;
+    border-color: $c-primary;
+}

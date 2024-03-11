@@ -1,0 +1,29 @@
+// $ct:".category";
+// #{$ct}{
+//     &-title{
+//         padding: 15px;
+//         text-align: center;
+//         font-size: 22px;
+//         font-weight: 700;
+//         font-family: $title;
+//         &::before{
+//             content: "";
+//             border-bottom: 1px solid #666;
+//         }
+//     }
+// }
+// $d:".dev";
+// #{$d}{
+//     &-item{
+//         width: auto;
+//         height: 100px;
+//         display: block;
+//         margin:0 auto;
+//         padding: 8px;
+//     }
+// }
+.product-bg{
+  background-image:url('../images/products/dwij-newtab-chrome-todo-notes-extension-banner-1.jpg')!important;
+  background-size: cover!important;
+  background-position-y: top!important;
+}

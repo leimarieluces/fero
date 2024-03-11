@@ -1,0 +1,27 @@
+$drp:".dropdown";
+#{$drp} {
+    &-custom{
+        .nav-link{
+            color: #fff;
+            height: 65px;
+        }
+        .dropdown-menu{
+            border-top: 6px solid $c-primaryLight;
+            border-radius: 0 0 4px 4px;
+            width: 275px;
+            .dropdown-item{
+                padding: 8px 15px;
+                display: flex;
+                align-items: center;
+                border-radius: 0;
+                margin:8px 0;
+                font-family: $text;
+                &:hover{
+                    border-left:4px solid $c-primaryLight;
+                    background: #fff;
+                    color: $c-primaryDark;
+                }
+            }
+        }
+    }
+}

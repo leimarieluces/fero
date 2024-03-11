@@ -1,0 +1,44 @@
+$np:".pill";
+#{$np} {
+    margin-bottom: 15px;
+    padding: 15px;
+   .nav-link{
+       color: $c-primaryLight;
+       font-family: $title;
+       border-radius: 0;
+       height: 45px;
+       border:2px solid $c-primaryLight;
+       padding:11px;
+       margin: 0 0 8px -2px!important;
+       justify-content: center;
+        &.active{
+            color: #fff;
+            background-color: $c-primaryLight;
+        }
+   }
+}
+$nt:".nav-tabs";
+#{$nt} {
+    &-01{
+        border-bottom: 0;
+        margin: 15px 15px 30px 15px;
+        justify-content: center;
+        .nav-item{
+            .nav-link{
+                font-family: $title;
+                color: $c-black;
+                font-size: 18px;
+                font-weight: 600;
+                border: 0;
+                &.active{
+                    border: 0;
+                    color: $c-primaryLight;
+                }
+                &:hover{
+                    border: 0;
+                    color: $c-primaryLight;
+                }
+            }
+        }
+    }
+}

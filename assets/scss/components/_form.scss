@@ -1,0 +1,73 @@
+%form{
+    height: 45px;
+    background-color:#dee8f5;
+    border:1px solid $c-primarySuperLight;
+    font-size: 14px;
+}
+.form{
+    margin: 30px 0;
+    &-input{
+        @extend %form;
+    }
+    &-label{
+        margin-bottom: 8px;
+        color:$c-black;
+        display: block;
+        font-family: $text;
+        i{
+            opacity:0.50;
+            margin-top:2px;
+        }
+    }
+    &-textarea{
+        @extend %form;
+        resize: none;
+        overflow: auto;
+        height: 80px!important;
+    }
+    &-custom-check{
+        background-color:#dee8f5;
+        border: 1px solid $c-primaryLight!important;
+    }
+    &-select{
+        @extend %form;
+        border-radius: 4px;
+        padding: 8px;
+    }
+    &-note{
+        color: $text-danger;
+        font-size: 13px;
+        line-height: 17px;
+        font-weight: 500;
+        margin:4px 0;
+    }
+}
+.upload{
+    &-holder{
+        padding: 15px;
+        border: 4px;
+        background: $c-white;
+    }
+    &-title{
+        color: $c-primaryDark;
+        margin-bottom: 15px;
+    }
+    &-file{
+        padding: 15px;
+        background: #f1f4f5;
+        border-radius: 4px;
+        border: 1px solid #ddd;
+        input{
+            margin-bottom: 15px;
+            @media screen and (max-width:$laptop-width) {
+                display: block;
+            }
+        }
+    }
+    &-info{
+        padding:15px;
+    }
+    &-holder{
+        margin-bottom: 15px;
+    }
+}

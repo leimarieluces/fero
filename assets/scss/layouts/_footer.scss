@@ -1,0 +1,91 @@
+$f:".footer";
+%txtfooter{
+    padding: 8px;
+    color: $c-white;
+    font-family: $text;
+    font-size: 14px;
+    line-height: 18px;
+}
+#{$f} {
+    background: $c-primaryDark;
+    &-content{
+        padding: 60px 100px;
+        @media screen and (max-width:$laptop-width){
+            padding: 40px 60px;
+        }
+        @media screen and (max-width:$mobile-width){
+            padding: 30px;
+        }
+        .social-media{
+            display: inline-block!important;
+        }
+        #{$f}{
+            &-title{
+                font-size:20px;
+                color:$c-white;
+                font-family: $title;
+                padding: 15px 8px;
+                font-weight: 600;
+            }
+            &-links{
+                li{
+                    border-bottom: 1px solid #ffffff12;
+                    padding:8px 0;
+                    a{
+                        @extend %txtfooter;
+                        display: block;
+                        &:hover{
+                            border-left: 3px solid $c-primaryLight;
+                            text-decoration: none;
+                            color: $c-white;
+                        }
+                    }
+                }
+            }
+            &-logo{
+                width: 200px;
+                height: 108px;
+                background:url(../images/fero_icloud_logo_light.png);
+                background-size: cover;
+            }
+            &-form{
+                padding:15px 8px;
+                .form-label{
+                    @extend %txtfooter;
+                    padding: 0;
+                    font-weight: normal;
+                }
+                button{
+                    @media screen and (max-width:$mobile-width) {
+                        width: 100%;
+                        height: 38px;
+                    }
+                }
+            }
+            &-info{
+                margin:15px 0;
+                li{
+                   @extend %txtfooter;
+                }
+            }
+            &-block{
+                &:not(:last-child){
+                    border-right: 1px solid #ffffff12;
+                    @media screen and (max-width:$desktop-width) {
+                        border: 0;
+                    }
+                }
+            }
+        }
+    }
+    .copyright{
+        @extend %txtfooter;
+        position: relative;
+        width: 100%;
+        background:$c-primaryDark;
+        text-align: center;
+        padding: 30px;
+        border-top: 1px solid #ffffff12;
+    }
+
+}
